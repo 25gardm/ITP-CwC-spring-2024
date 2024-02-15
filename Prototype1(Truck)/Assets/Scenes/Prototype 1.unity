@@ -326,7 +326,7 @@ Camera:
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 31.067999
+  m_FocalLength: 21.209452
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
@@ -341,7 +341,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 42.23806
+  field of view: 59.001102
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -367,13 +367,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.020640379, y: -0.055174053, z: -0.023657966, w: 0.997983}
-  m_LocalPosition: {x: 0.71, y: 6.53, z: -29.19}
+  m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
+  m_LocalPosition: {x: 0, y: 5, z: -23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 2.211, y: -6.384, z: -2.839}
+  m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
 --- !u!114 &534669906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -449,9 +449,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 104122, guid: aea2a6cdcc9d7944090d528486ebaee1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1225533931}
-    - targetCorrespondingSourceObject: {fileID: 104122, guid: aea2a6cdcc9d7944090d528486ebaee1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1225533936}
   m_SourcePrefab: {fileID: 100100000, guid: aea2a6cdcc9d7944090d528486ebaee1, type: 3}
 --- !u!1001 &974359749
 PrefabInstance:
@@ -655,6 +652,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   turnSpeed: 0
+  horizontalInput: 0
+  forwardInput: 0
 --- !u!54 &1225533931
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -682,19 +681,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1225533936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1225533925}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c7dcab57c0c0345aaff7fc4109a132, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!4 &1312232381 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3858995680632013777, guid: 51a084e4035b24e76997744a50c711d4, type: 3}
