@@ -10,6 +10,15 @@ Prototype1(Truck)/[Bb]uilds/
 Prototype1(Truck)/[Ll]ogs/
 Prototype1(Truck)/[Uu]ser[Ss]ettings/
 
+
+Prototype_2/[Ll]ibrary/
+Prototype_2/[Tt]emp/
+Prototype_2/[Oo]bj/
+Prototype_2/[Bb]uild/
+Prototype_2/[Bb]uilds/
+Prototype_2/[Ll]ogs/
+Prototype_2/[Uu]ser[Ss]ettings/
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
