@@ -73,6 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2967630527092338941}
+  - component: {fileID: 4299861846799418164}
   m_Layer: 0
   m_Name: Horse_Rig_SHJntGrp
   m_TagString: Untagged
@@ -96,6 +97,18 @@ Transform:
   - {fileID: 9055899366265005422}
   m_Father: {fileID: 1802572093544992810}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4299861846799418164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630832312485491128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc246fc7548454aa9b8d6e9a1c2343, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &698874332764169190
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,6 +534,8 @@ GameObject:
   - component: {fileID: 7092790348478298261}
   - component: {fileID: 7857788950682164332}
   - component: {fileID: 7994475691639742040}
+  - component: {fileID: 7754249913383672001}
+  - component: {fileID: 7561958132788612178}
   m_Layer: 0
   m_Name: Animal_Horse_Black
   m_TagString: Untagged
@@ -593,6 +608,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07b914ff8fe5949428c165d7a0b948bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &7754249913383672001
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3076440145803723268}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 62.99616, y: 35.59732, z: 96.883545}
+  m_Center: {x: 46.238533, y: -13.927834, z: 34.242958}
+--- !u!114 &7561958132788612178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3076440145803723268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc246fc7548454aa9b8d6e9a1c2343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3116400147441642239
