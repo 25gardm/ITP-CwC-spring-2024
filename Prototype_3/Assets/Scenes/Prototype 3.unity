@@ -289,6 +289,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.07
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: b186f9485a0828b468f98fe846ae1a68, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -320,9 +324,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c279df2be0696f74a99d22c9cc1bf642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 0
-  gravityModifier: 0
+  jumpForce: 0.5
+  gravityModifier: 1
   isOnGround: 1
+  gameOver: 0
 --- !u!65 &181656970
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -342,8 +347,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.8136322, y: 3.131394, z: 1.0483198}
-  m_Center: {x: 0.59043443, y: 0.6012619, z: 0.44138896}
+  m_Size: {x: 2.6969914, y: 3.234995, z: 3.0856628}
+  m_Center: {x: -0.5573708, y: 0.65306234, z: -0.577283}
 --- !u!54 &181656971
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -352,7 +357,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181656968}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -640,23 +645,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 906bfc5ef2c1d594baafccd90493cd66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2008017531 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7586504276322669973, guid: fee300d30f2dc684dba597ef45148cf6, type: 3}
-  m_PrefabInstance: {fileID: 2964135434743003053}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2008017532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2008017531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2366f447142bdc41b8cbcf26f6e6489, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2014335011
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,7 +659,7 @@ GameObject:
   - component: {fileID: 2014335012}
   m_Layer: 9
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -817,10 +805,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7586504276322669973, guid: fee300d30f2dc684dba597ef45148cf6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2008017532}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fee300d30f2dc684dba597ef45148cf6, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
