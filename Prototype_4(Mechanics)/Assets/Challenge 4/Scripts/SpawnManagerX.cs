@@ -16,7 +16,7 @@ public class SpawnManagerX : MonoBehaviour
     public int waveNumber = 1;
 
 
-    private GameObject player; 
+    public GameObject player; 
 
     // Update is called once per frame
     void Update()
@@ -25,7 +25,7 @@ public class SpawnManagerX : MonoBehaviour
 
         if (enemyCount == 0)
         {
-           // SpawnEnemyWave(waveCount);
+           SpawnEnemyWave(waveCount);
             waveNumber++; SpawnEnemyWave(waveNumber);
             Instantiate(enemyPrefab, GenerateSpawnPosition(), enemyPrefab.transform.rotation);
         }
@@ -58,7 +58,7 @@ public class SpawnManagerX : MonoBehaviour
         }
       
 
-      //  waveCount++;
+      waveCount++;
         ResetPlayerPosition(); // put player back at start
 
     }
