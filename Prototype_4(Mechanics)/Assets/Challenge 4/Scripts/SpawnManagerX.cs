@@ -21,7 +21,7 @@ public class SpawnManagerX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        enemyCount = FindObjectsOfType<Enemy>().Length;
+        enemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
 
         if (enemyCount == 0)
         {
@@ -58,7 +58,7 @@ public class SpawnManagerX : MonoBehaviour
         }
       
 
-      waveCount++;
+     // waveCount++;
         ResetPlayerPosition(); // put player back at start
 
     }

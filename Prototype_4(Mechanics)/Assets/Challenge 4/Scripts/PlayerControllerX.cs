@@ -5,20 +5,24 @@ using UnityEngine;
 public class PlayerControllerX : MonoBehaviour
 {
     private Rigidbody playerRb;
-    private float speed = 500;
+    private float speed = 800;
     private GameObject focalPoint;
+    private float impulse;
 
     public bool hasPowerup;
     public GameObject powerupIndicator;
     public int powerUpDuration = 5;
+    public ParticleSystem smoke;
+    
 
-    private float normalStrength = 10; // how hard to hit enemy without powerup
+    private float normalStrength = 15; // how hard to hit enemy without powerup
     private float powerupStrength = 25; // how hard to hit enemy with powerup
     
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
         focalPoint = GameObject.Find("Focal Point");
+        smoke.Play();
     }
 
     void Update()
@@ -29,6 +33,11 @@ public class PlayerControllerX : MonoBehaviour
 
         // Set powerup indicator position to beneath player
         powerupIndicator.transform.position = transform.position + new Vector3(0, -0.6f, 0);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            float impulse = speed * 2;
+            
+        }
 
     }
 
@@ -39,6 +48,7 @@ public class PlayerControllerX : MonoBehaviour
         {
             Destroy(other.gameObject);
             hasPowerup = true;
+            StartCoroutine(PowerupCooldown());
             powerupIndicator.SetActive(true);
         }
     }
@@ -46,9 +56,9 @@ public class PlayerControllerX : MonoBehaviour
     // Coroutine to count down powerup duration
     IEnumerator PowerupCooldown()
     {
-        yield return new WaitForSeconds(powerUpDuration);
+        yield return new WaitForSeconds(5);
         hasPowerup = false;
-        powerupIndicator.SetActive(false);
+        powerupIndicator.gameObject.SetActive(false);
     }
 
     // If Player collides with enemy
