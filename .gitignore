@@ -81,6 +81,16 @@ Prototype_4(Mechanics)/[Ll]ogs/
 Prototype_4(Mechanics)/[Uu]ser[Ss]ettings/
 >>>>>>> e6f96c0d530dd270f05c49ad66da9d0d632a75db
 
+
+Prototype_5/[Ll]ibrary/
+Prototype_5/[Tt]emp/
+Prototype_5/[Oo]bj/
+Prototype_5/[Bb]uild/
+Prototype_5/[Bb]uilds/
+Prototype_5/[Ll]ogs/
+Prototype_5/[Uu]ser[Ss]ettings/
+
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
