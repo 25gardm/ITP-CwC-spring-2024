@@ -91,6 +91,15 @@ Prototype_5/[Ll]ogs/
 Prototype_5/[Uu]ser[Ss]ettings/
 
 
+Final(sticks)/[Ll]ibrary/
+Final(sticks)/[Tt]emp/
+Final(sticks)/[Oo]bj/
+Final(sticks)/[Bb]uild/
+Final(sticks)/[Bb]uilds/
+Final(sticks)/[Ll]ogs/
+Final(sticks)/[Uu]ser[Ss]ettings/
+
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
